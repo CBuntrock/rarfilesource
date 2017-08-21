@@ -22,7 +22,7 @@
 #include "Utils.h"
 #include "RFS.h"
 
-void ErrorMsg (DWORD errorCode, wchar_t *format, ...)
+void ErrorMsg (DWORD errorCode, const wchar_t *format, ...)
 {
 	wchar_t buffer [1024];
 	wchar_t *end;
@@ -53,7 +53,7 @@ void ErrorMsg (DWORD errorCode, wchar_t *format, ...)
 
 #ifdef _DEBUG
 
-static wchar_t *mhd_flags [] =
+static const wchar_t *const mhd_flags [] =
 {
 	L"MHD_VOLUME",
 	L"MHD_COMMENT",
@@ -67,7 +67,7 @@ static wchar_t *mhd_flags [] =
 	L"MHD_ENCRYPTVER"
 };
 
-static wchar_t *lhd_flags1 [] =
+static const wchar_t *const lhd_flags1 [] =
 {
 	L"LHD_SPLIT_BEFORE",
 	L"LHD_SPLIT_AFTER",
@@ -76,7 +76,7 @@ static wchar_t *lhd_flags1 [] =
 	L"LHD_SOLID"
 };
 
-static wchar_t *lhd_flags2 [] =
+static const wchar_t *const lhd_flags2 [] =
 {
 	L"LHD_LARGE",
 	L"LHD_UNICODE",
@@ -86,7 +86,7 @@ static wchar_t *lhd_flags2 [] =
 	L"LHD_EXTFLAGS"
 };
 
-static wchar_t *earc_flags [] =
+static const wchar_t *const earc_flags [] =
 {
 	L"EARC_NEXT_VOLUME",
 	L"EARC_DATACRC",

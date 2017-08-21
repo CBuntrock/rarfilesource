@@ -20,7 +20,7 @@
 
 #include <windows.h>
 
-void ErrorMsg (DWORD errorCode, wchar_t *format, ...);
+void ErrorMsg (DWORD errorCode, const wchar_t *format, ...);
 
 #ifdef _DEBUG
 #include "RAR.h"

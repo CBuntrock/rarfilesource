@@ -69,7 +69,7 @@ private:
 	LPWSTR m_file_name;
 	CRFSFile *m_file;
 
-	static file_type_t s_file_types [];
+	static const file_type_t s_file_types [];
 };
 
 #endif // RFS_H
